@@ -8,7 +8,7 @@ services:
     environment: #Will Get this values from .env file in directory
       POSTGRES_USER: DBUSER
       POSTGRES_PASSWORD: DBPASS
-      POSTGRES_DB: "OnlineRetailPOS"
+      POSTGRES_DB: "IroncladPOS"
     volumes:
       - ./postgres_data:/var/lib/postgresql/data  # Mount volume for PostgreSQL data
     ports:
@@ -16,7 +16,7 @@ services:
 
   webapp:
     container_name: pos-django-webapp-container
-    image: onlineretailpos
+    image: ironcladpos
     build: 
       context: .
       dockerfile: dockerfile
@@ -26,7 +26,7 @@ services:
       SECRET_KEY_DEV: 'default-*fejw5!9md7cy9m-)*qw7w3$=%9$-9uyqn(k1smw*c'  # Change This 
       NAME_OF_DATABASE: 'postgres' # Set to postgres if using Postgres DB from docker image, ops avail: sqlite, postgres, mysql 
       DB_HOST: postgresdb
-      DB_NAME: "OnlineRetailPOS" 
+      DB_NAME: "IroncladPOS" 
       DB_USERNAME: DBUSER
       DB_PASSWORD: DBPASS
       # If you are not providing .env file just add 

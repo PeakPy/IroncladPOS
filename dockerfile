@@ -2,9 +2,9 @@
 FROM python:3.8   
 
 # Set the working directory  
-WORKDIR /OnlineRetailPOS
+WORKDIR /IroncladPOS
 
-COPY . /OnlineRetailPOS/
+COPY . /IroncladPOS/
 
 # Set environment variables  
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -27,7 +27,7 @@ CMD ["sh", "-c", "python manage.py makemigrations && python manage.py migrate &&
 
 
 # Required Variables:
-# - SECRET_KEY_DEV: Pass in a secure key            (Default: 'django_dev_secret_key_online-retail-pos-1234')
+# - SECRET_KEY_DEV: Pass in a secure key            (Default: 'django_dev_secret_key_ironclad-pos-1234')
 # - NAME_OF_DATABASE: 'sqlite'/'postgres'/'mysql'   (Default: 'sqlite')
 
 # Required if DB is other than sqlite from provided options

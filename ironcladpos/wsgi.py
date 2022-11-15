@@ -1,5 +1,5 @@
 """
-WSGI config for onlineretailpos project.
+WSGI config for ironcladpos project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,7 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'onlineretailpos.settings.production')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ironcladpos.settings.production')
 os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "true"
 
 application = get_wsgi_application()

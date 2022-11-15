@@ -7,7 +7,7 @@ load_dotenv()
 ip_address = socket.gethostbyname(socket.gethostname())
     
 DEBUG = False
-SECRET_KEY = os.getenv('SECRET_KEY_DEV', 'django_dev_secret_key_online-retail-pos-1234')
+SECRET_KEY = os.getenv('SECRET_KEY_DEV', 'django_dev_secret_key_ironclad-pos-1234')
 
 ALLOWED_HOSTS = [ip_address,'127.0.0.1']
 CSRF_TRUSTED_ORIGINS = [f"http://{ip_address}","http://127.0.0.1"]
@@ -25,7 +25,7 @@ database_dict = {
         } ,
     'postgres' : {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.getenv('DB_NAME', "OnlineRetailPOS"),  # Use environment variable DB_NAME, defaulting to 'default_db_name'
+            'NAME': os.getenv('DB_NAME', "IroncladPOS"),  # Use environment variable DB_NAME, defaulting to 'default_db_name'
             'USER': os.getenv('DB_USERNAME'),  # Use environment variable DB_USERNAME
             'PASSWORD': os.getenv('DB_PASSWORD'),  # Use environment variable DB_PASSWORD
             'HOST': os.getenv('DB_HOST', "localhost"),  # Use environment variable DB_HOST
@@ -33,7 +33,7 @@ database_dict = {
         } ,
     'mysql': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': os.getenv('DB_NAME', "OnlineRetailPOS"),  # Use environment variable DB_NAME
+            'NAME': os.getenv('DB_NAME', "IroncladPOS"),  # Use environment variable DB_NAME
             'USER': os.getenv('DB_USERNAME'),  # Use environment variable DB_USERNAME
             'PASSWORD': os.getenv('DB_PASSWORD'),  # Use environment variable DB_PASSWORD
             'HOST': os.getenv('DB_HOST', "localhost"),  # Use environment variable DB_HOST
