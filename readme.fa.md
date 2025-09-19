@@ -1,12 +1,11 @@
 <div align="center">
-
-### 🏢 شرکت فولاد نورد آتیه
-<img src="screenshots/company-logo.png" width="160" alt="Foolad Nourd Atieh">
-
----
-
-### 💻 پروژه Ironclad POS
-<img src="screenshots/project-logo.png" width="140" alt="Ironclad POS">
+  
+<table>
+  <tr>
+    <td> 🏢 Foolad Nourd Atieh Company<img src="screenshots/company-logo.png" width="340" alt="Foolad Nourd Atieh" /></td>
+    <td> 💻 Ironclad POS Project<img src="screenshots/project-logo.png" width="340" alt="Ironclad POS" /></td>
+  </tr>
+</table>
 
 ---
 
